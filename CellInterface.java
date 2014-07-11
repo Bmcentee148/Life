@@ -15,8 +15,8 @@ public interface CellInterface{
 		if true the Cell will be set to 'on'. */
 	public void setStatus(boolean newStatus);
 
-	/** <p>This function will return the status of the {@code Cell}
-		object .</p>
+	/** <p>This function will return whether the {@code Cell}
+		object is 'on' or 'off'.</p>
 
 	@return status The current status of the object. True is 
 		defined as 'on' and false 'off.  */
