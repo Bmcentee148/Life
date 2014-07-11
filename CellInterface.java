@@ -9,15 +9,17 @@
 public interface CellInterface{
 
 	/**
-		<p>This procedure will set the status of the cell to 
-		on or off depending on the given parameter.</p>
+	<p>This procedure will set the status of the cell to 
+	on or off depending on the given parameter.</p>
 
-		@param newStatus If false the Cell will be set to 'off',
-			if true the Cell will be set to 'on'.
+	@param newStatus If false the Cell will be set to 'off',
+		if true the Cell will be set to 'on'.
 	*/
 	public void setStatus(boolean newStatus);
 
+	/**
 	
+	*/
 
 
 
