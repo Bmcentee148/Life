@@ -1,6 +1,9 @@
 /** <p>This class will represent a Cell in Conway's game of life and
 	will be either 'on' or 'off'. It will be responsible for 
-	knowing its status, and being able to change this status.</p> */
+	knowing its status, and being able to change this status.</p>
+
+	@author Brian McEntee
+	@version 7.16.2014 */
 
 public class Cell implements CellInterface{
 

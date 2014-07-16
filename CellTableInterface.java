@@ -12,8 +12,12 @@ public interface CellTableInterface{
 
 	/** <p> This procedure will initialize the CellTable. This
 		method MUST be done before any new generations of the 
-		table can be created. </p> */
+		table can be created. </p> 
 
+		@param initialTable This will be the initial state of the 
+			{@code CellTable}. All future generations will be based
+			off of this initial state. */
+	public void initialize(Cell [][] initialTable);
 
 	/** <p> This procedure will bring about a new generation of the 
 		game. The {@code cellGrid} will be changed based on the 
