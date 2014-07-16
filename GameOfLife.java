@@ -26,7 +26,7 @@ public class GameOfLife{
 		}
 
 		try{
-			gameBoard = new CellTable(getStateFromFile(fileName));
+			gameBoard = new CellTable(getStateFromFile(fileName)); //create the board
 		}
 		catch(IOException e){
 			System.out.println(e.toString());
@@ -34,13 +34,15 @@ public class GameOfLife{
 
 		gameBoard.display(); //display initial state
 		System.out.println("\n");
+
+		//run through each generation 
 		for(int i = 0; i< numGens; i++){
 			gameBoard.newGeneration();
 		} 
 		gameBoard.display(); //display final state
 	}
 
-	public static Cell[][] getStateFromFile(String fileName) throws IOException{
+	private static Cell[][] getStateFromFile(String fileName) throws IOException{
 		Cell[][] initArray;
 		File file = new File(fileName);
 		String tempLine;
